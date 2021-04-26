@@ -19,11 +19,11 @@ public class LastDigitChecker {
             return false;
         }
 
-        while(isValid(number1) || isValid(number2) || isValid(number3)){
-               lastDigit1 = number1 % 10;
-               lastDigit2 = number2 % 10;
-               lastDigit3 = number3 % 10;
-               break;
+        while (isValid(number1) || isValid(number2) || isValid(number3)) {
+            lastDigit1 = number1 % 10;
+            lastDigit2 = number2 % 10;
+            lastDigit3 = number3 % 10;
+            break;
 
         }
 
@@ -31,14 +31,16 @@ public class LastDigitChecker {
                 || (lastDigit2 == lastDigit1) || (lastDigit2 == lastDigit3)
                 || lastDigit3 == lastDigit1 || lastDigit3 == lastDigit2) {
             return true;
-        } else return false;
+        } else
+            return false;
     }
 
 
-    public static boolean isValid ( int number){
+    public static boolean isValid(int number) {
         if (number >= 10 && number <= 1000) {
             return true;
-        } else return false;
+        } else
+            return false;
 
     }
 

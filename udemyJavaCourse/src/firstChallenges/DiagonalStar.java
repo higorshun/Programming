@@ -7,28 +7,28 @@ public class DiagonalStar {
 
     }
 
-    public static String printSquareStar(int number){
-        String star= "*";
+    public static String printSquareStar(int number) {
+        String star = "*";
         String finalWork = "*";
 
 
-        if(number<5){
+        if (number < 5) {
             return "Invalid number";
         }
         int firstRow = 0;
-        int finalRow =0;
+        int finalRow = 0;
         int firstColunm = 0;
         int lastColunm = 0;
 
-        while (firstRow!=number) {
+        while (firstRow != number) {
             System.out.print(star);
             firstRow++;
-            if (firstRow == number-1) {
+            if (firstRow == number - 1) {
                 while (firstColunm != number) {
                     System.out.println(star);
                     firstColunm++;
-                    if(firstColunm == number){
-                        while(finalRow!=number){
+                    if (firstColunm == number) {
+                        while (finalRow != number) {
                             System.out.print(star);
                             finalRow++;
                         }

@@ -7,11 +7,11 @@ public class FactorialAndFibonacci {
      * Obtains a non-negative integer from the user, passing it to
      * the factorial and fibonacci functions and printing the results
      * to standard output.
+     *
      * @param args Command line args (not used).
      */
 
     public static void main(String[] args) {
-
 
 
         Scanner s = new Scanner(System.in);
@@ -43,7 +43,8 @@ public class FactorialAndFibonacci {
                 tryOneMoreTime = true;
             } else if (answer == 'q') {
                 tryOneMoreTime = false;
-            } else System.out.println("Invalid answer");
+            } else
+                System.out.println("Invalid answer");
 
         } while (tryOneMoreTime);
 
@@ -54,6 +55,7 @@ public class FactorialAndFibonacci {
     /**
      * Calculates the factorial of num recursively.
      * Precondition: num is a non-negative integer.
+     *
      * @param number A non-negative integer.
      * @return The factorial of num.
      */

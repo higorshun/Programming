@@ -9,25 +9,25 @@ public class FirstLastDigitSum {
     }
 
 
-    public static int sumFirstAndLastDigit(int number){
+    public static int sumFirstAndLastDigit(int number) {
 
-        if (number<0){
+        if (number < 0) {
             return -1;
         }
 
         int firstNumber = 0;
         int lastNumber = 0;
 
-        while (number!=0){
+        while (number != 0) {
             //extract first number
-            firstNumber = number%10;
+            firstNumber = number % 10;
             //ignore other numbers
-            while (number>=10){
-                number/=10;
+            while (number >= 10) {
+                number /= 10;
             }
             lastNumber = number;
             break;
-            }
+        }
 
         return firstNumber + lastNumber;
 

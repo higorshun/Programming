@@ -17,7 +17,7 @@ public class NumberOfDaysInMonth {
             return false;
         }
 
-             }
+    }
 
     public static int getDaysInMonth(int month, int year) {
         if (month < 1 || month > 12) {
@@ -28,7 +28,10 @@ public class NumberOfDaysInMonth {
             switch (month) {
                 case 2:
                     return 29;
-                case 4: case 6: case 9: case 11:
+                case 4:
+                case 6:
+                case 9:
+                case 11:
                     return 30;
                 default:
                     return 31;
@@ -38,7 +41,10 @@ public class NumberOfDaysInMonth {
             switch (month) {
                 case 2:
                     return 28;
-                case 4: case 6: case 9: case 11:
+                case 4:
+                case 6:
+                case 9:
+                case 11:
                     return 30;
                 default:
                     return 31;

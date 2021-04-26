@@ -7,9 +7,10 @@ public class Printer {
     private boolean duplex;
 
     public Printer(int tonerLevel, boolean duplex) {
-        if (tonerLevel>-1 && tonerLevel <=100){
+        if (tonerLevel > -1 && tonerLevel <= 100) {
             this.tonerLevel = tonerLevel;
-        } else this.tonerLevel = -1;
+        } else
+            this.tonerLevel = -1;
         this.pagesPrinted = 0;
         this.duplex = duplex;
     }
@@ -19,7 +20,7 @@ public class Printer {
 
         if (this.duplex) {
             pagesToPrint /= 2;
-            pagesToPrint = pagesToPrint + pages%2;
+            pagesToPrint = pagesToPrint + pages % 2;
             System.out.println("Printing in duplex mode.");
 
         }
@@ -45,7 +46,7 @@ public class Printer {
     }
 
 
-   public int getPagesPrinted() {
+    public int getPagesPrinted() {
         return pagesPrinted;
     }
 

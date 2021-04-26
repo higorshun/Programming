@@ -5,8 +5,8 @@
 package composition.video91;
 
 /**
- *  Composition is a matter of HAVE
- *  Inheritance is a matter of TO BE
+ * Composition is a matter of HAVE
+ * Inheritance is a matter of TO BE
  */
 public class PC {
     private Case theCase;
@@ -19,12 +19,12 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public void powerUp(){
+    public void powerUp() {
         theCase.pressPowerButton();
         drawLogo();
     }
 
-    private void drawLogo(){
+    private void drawLogo() {
         //Fancy graphics
         monitor.drawPixelAt(1200, 50, "yellow");
     }

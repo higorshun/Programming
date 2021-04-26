@@ -22,13 +22,15 @@ class Car {
         return cylinders;
     }
 
-    public String startEngine(){
-        return  (name + " engine starts");
+    public String startEngine() {
+        return (name + " engine starts");
     }
-    public String accelerate(){
-        return  (name + " accelerated");
+
+    public String accelerate() {
+        return (name + " accelerated");
     }
-    public String brake(){
+
+    public String brake() {
         return (name + " brake activated");
     }
 }
@@ -75,7 +77,7 @@ class Vitz extends Car {
     }
 }
 
-class Insight extends Car{
+class Insight extends Car {
     public Insight() {
         super("Insight", 4);
     }
@@ -98,7 +100,7 @@ class Insight extends Car{
 
 public class Main {
     public static void main(String[] args) {
-        for(int i = 0; i<=5; i++){
+        for (int i = 0; i <= 5; i++) {
             Car car = randomCar();
             System.out.println("Car #" + i + " is " + car.getName() + ".\n" +
                     car.getName() + " works with " + car.getCylinders() + " cylinders." + "\n" +
@@ -110,12 +112,15 @@ public class Main {
 
     }
 
-    public static Car randomCar(){
-        int randomNumber = (int)(Math.random()*3)+1;
-                switch (randomNumber){
-            case 1: return  new Palio();
-            case 2: return new Vitz();
-            case 3: return new Insight();
+    public static Car randomCar() {
+        int randomNumber = (int) (Math.random() * 3) + 1;
+        switch (randomNumber) {
+            case 1:
+                return new Palio();
+            case 2:
+                return new Vitz();
+            case 3:
+                return new Insight();
         }
         return null;
     }

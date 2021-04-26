@@ -10,15 +10,15 @@ public class Player {
     public int health;
     public String weapon;
 
-    public void loseHealth(int damage){
+    public void loseHealth(int damage) {
         this.health = (this.health - damage);
-        if (this.health <= 0){
+        if (this.health <= 0) {
             System.out.println("Player knocked out");
             //Reduce number of lives remaining for the player
         }
     }
 
-    public int healthRemaining (){
+    public int healthRemaining() {
         return this.health;
     }
 }

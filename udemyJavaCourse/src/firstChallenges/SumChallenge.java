@@ -8,27 +8,24 @@ public class SumChallenge {
 
     }
 
-    public static int sumDigits(int number){
-        if (number < 10){
+    public static int sumDigits(int number) {
+        if (number < 10) {
             return -1;
         }
         int lastDigits = 0;
 
 
-         while(number>=10){
+        while (number >= 10) {
 
-              number = number%10;
-             lastDigits = number/10;
+            number = number % 10;
+            lastDigits = number / 10;
 
-             System.out.println(lastDigits);
+            System.out.println(lastDigits);
         }
-
-
 
 
         return lastDigits;
     }
-
 
 
 }

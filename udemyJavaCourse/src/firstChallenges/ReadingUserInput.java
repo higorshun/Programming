@@ -25,7 +25,7 @@ public class ReadingUserInput {
                 System.out.println("Invalid year of birth.");
             } // end of checking the range of age
 
-        }  else {// end of checking if has a valid integer
+        } else {// end of checking if has a valid integer
             System.out.println("Unable to parse year of birth.");
         }
         scanner.close();

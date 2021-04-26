@@ -16,11 +16,11 @@ public class Sofa {
         this.color = color;
     }
 
-    private void makePillows(){
+    private void makePillows() {
         System.out.println("Making Pillows");
     }
 
-    public void decorating(){
+    public void decorating() {
         makePillows();
     }
 

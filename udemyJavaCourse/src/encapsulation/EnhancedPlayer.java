@@ -1,4 +1,3 @@
-
 package encapsulation;
 
 public class EnhancedPlayer {
@@ -9,15 +8,15 @@ public class EnhancedPlayer {
     public EnhancedPlayer(String name, int hitPoints, String weapon) {
 
         this.name = name;
-        if (hitPoints > 0 && hitPoints <= 100){
+        if (hitPoints > 0 && hitPoints <= 100) {
             this.hitPoints = hitPoints;
         }
         this.weapon = weapon;
     }
 
-    public void loseHealth(int damage){
+    public void loseHealth(int damage) {
         this.hitPoints = (this.hitPoints - damage);
-        if (this.hitPoints <= 0){
+        if (this.hitPoints <= 0) {
             System.out.println("Player knocked out");
             //Reduce number of lives remaining for the player
         }

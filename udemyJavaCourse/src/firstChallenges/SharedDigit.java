@@ -33,7 +33,8 @@ public class SharedDigit {
 
         if (firstOfFirstNumber == firstOfSecondNumber || lastOfSecondNumber == lastOfFirstNumber || firstOfFirstNumber == lastOfSecondNumber || lastOfFirstNumber == firstOfSecondNumber) {
             return true;
-        } else return false;
+        } else
+            return false;
 
 
     }

@@ -26,7 +26,7 @@ public class InputCalculator {
                 YY = XX / counter;
 
             } else {
-                System.out.println("SUM = " + (int)Math.round(XX) + " AVG = " + (int)Math.round(YY));
+                System.out.println("SUM = " + (int) Math.round(XX) + " AVG = " + (int) Math.round(YY));
                 break;
             }
             scanner.nextLine(); // deal with enter problem before end of loop

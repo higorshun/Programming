@@ -68,11 +68,11 @@ public class UIFactorialAndFibonacciChallenge {
 
     */
 /**
-     * Obtains a non-negative integer from the user, passing it to
-     * the factorial and fibonacci functions and printing the results
-     * to standard output.
-     * @param args Command line args (not used).
-     *//*
+ * Obtains a non-negative integer from the user, passing it to
+ * the factorial and fibonacci functions and printing the results
+ * to standard output.
+ * @param args Command line args (not used).
+ *//*
 
 
     public static void main(String[] args) {
@@ -120,11 +120,11 @@ public class UIFactorialAndFibonacciChallenge {
 
     */
 /**
-     * Calculates the factorial of num recursively.
-     * Precondition: num is a non-negative integer.
-     * @param number A non-negative integer.
-     * @return The factorial of num.
-     *//*
+ * Calculates the factorial of num recursively.
+ * Precondition: num is a non-negative integer.
+ * @param number A non-negative integer.
+ * @return The factorial of num.
+ *//*
 
     private static int factorial(int number) {
         if (number == 0 || number == 1) {
@@ -136,10 +136,10 @@ public class UIFactorialAndFibonacciChallenge {
 
     */
 /*** Calculates the "num"th Fibonacci number recursively.
-     * Precondition: num is a non-negative integer.
-     @param number A non-negative integer.
-     @return The fibonacci of num.
-     *//*
+ * Precondition: num is a non-negative integer.
+ @param number A non-negative integer.
+ @return The fibonacci of num.
+ *//*
 
     private static int fibonacci(int number) {
         if (number <= 1) {

@@ -16,7 +16,7 @@ public class Room {
         this.sofa = sofa;
     }
 
-    public void installSofa(Sofa sofa){
+    public void installSofa(Sofa sofa) {
 
         this.sofa = sofa;
         System.out.println("Sofa was placed");
@@ -24,8 +24,7 @@ public class Room {
     }
 
 
-
-    private void closeDoor(){
+    private void closeDoor() {
         System.out.println("Door closed");
     }
 

@@ -3,13 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/assingmentsFromUniversity/assingmentsFromUniversity.iml" filepath="$PROJECT_DIR$/assingmentsFromUniversity/assingmentsFromUniversity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BooksExercises/booksExercises.iml" filepath="$PROJECT_DIR$/BooksExercises/booksExercises.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab1/lab1.iml" filepath="$PROJECT_DIR$/Lab1/lab1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab2/lab2.iml" filepath="$PROJECT_DIR$/Lab2/lab2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab3/lab3.iml" filepath="$PROJECT_DIR$/lab3/lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textBookandLabs/lab1/lab1.iml" filepath="$PROJECT_DIR$/textBookandLabs/lab1/lab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textBookandLabs/lab2/lab2.iml" filepath="$PROJECT_DIR$/textBookandLabs/lab2/lab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textBookandLabs/lab3/lab3.iml" filepath="$PROJECT_DIR$/textBookandLabs/lab3/lab3.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab5/lab5.iml" filepath="$PROJECT_DIR$/lab5/lab5.iml" />
       <module fileurl="file://$PROJECT_DIR$/learningJournals/learningJournals.iml" filepath="$PROJECT_DIR$/learningJournals/learningJournals.iml" />
       <module fileurl="file://$PROJECT_DIR$/Self-Quizzes/self-Quizzes.iml" filepath="$PROJECT_DIR$/Self-Quizzes/self-Quizzes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textBookandLabs/textBookandLabs.iml" filepath="$PROJECT_DIR$/textBookandLabs/textBookandLabs.iml" />
       <module fileurl="file://$PROJECT_DIR$/udemyJavaCourse/udemyJavaCourse.iml" filepath="$PROJECT_DIR$/udemyJavaCourse/udemyJavaCourse.iml" />
       <module fileurl="file://$PROJECT_DIR$/untitled104.iml" filepath="$PROJECT_DIR$/untitled104.iml" />
     </modules>

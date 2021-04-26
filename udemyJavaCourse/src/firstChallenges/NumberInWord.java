@@ -6,8 +6,8 @@ public class NumberInWord {
 
     }
 
-    public static void printNumberInWord (int number){
-        switch(number){
+    public static void printNumberInWord(int number) {
+        switch (number) {
             case 0:
                 System.out.println("ZERO");
                 break;

@@ -7,10 +7,10 @@ public class VipCustomer {
     private String emailAddress;
 
     /**
-     *  1st - Empty constructor with default values
+     * 1st - Empty constructor with default values
      */
 
-    public VipCustomer(){
+    public VipCustomer() {
         this("default name", 0.0, "default@john.com");
 
     }
@@ -25,12 +25,13 @@ public class VipCustomer {
 
     /**
      * 3rd constructor save all the fields
-     * @param name customer VIP name
-     * @param creditLimit with how much this wealthy customer will start
+     *
+     * @param name         customer VIP name
+     * @param creditLimit  with how much this wealthy customer will start
      * @param emailAddress private email address
      */
 
-    public VipCustomer(String name, double creditLimit, String emailAddress){
+    public VipCustomer(String name, double creditLimit, String emailAddress) {
         this.name = name;
         this.creditLimit = creditLimit;
         this.emailAddress = emailAddress;
@@ -42,11 +43,11 @@ public class VipCustomer {
     }
 
     public double getCreditLimit() {
-          return creditLimit;
+        return creditLimit;
     }
 
     public String getEmailAddress() {
-          return emailAddress;
+        return emailAddress;
     }
 
 }

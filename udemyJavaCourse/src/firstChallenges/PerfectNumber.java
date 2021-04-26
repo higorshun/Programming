@@ -7,23 +7,25 @@ public class PerfectNumber {
 
     }
 
-    public static boolean isPerfectNumber(int number){
+    public static boolean isPerfectNumber(int number) {
         int result = 0;
         int total = 0;
-        if (number < 1) return false;
+        if (number < 1)
+            return false;
 
         for (int i = 1; i <= number; i++) {
 
-                if (number % i == 0 && i!=number) {
-                    result = i;
-                    total = total+result;
-                }
+            if (number % i == 0 && i != number) {
+                result = i;
+                total = total + result;
+            }
 
         }
 
-        if (number==total){
+        if (number == total) {
             return true;
-        } else return false;
+        } else
+            return false;
 
 
     }

@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
 
 public class LearningJournal1 {
 
@@ -9,8 +8,8 @@ public class LearningJournal1 {
         double A, B, C;
 
         JFrame janelaTeste = new JFrame();
-        janelaTeste.setSize(600,500);
-        janelaTeste.setLocation(400,50);
+        janelaTeste.setSize(600, 500);
+        janelaTeste.setLocation(400, 50);
         janelaTeste.setLayout(null);
         janelaTeste.setBackground(Color.BLACK);
         janelaTeste.setVisible(true);
@@ -18,23 +17,23 @@ public class LearningJournal1 {
         Label questionLabel = new Label("Type the numbers to calculate the the " +
                 "largest root of quadratic equation.", Label.LEFT);
         questionLabel.setSize(500, 20);
-        questionLabel.setLocation(10,10);
+        questionLabel.setLocation(10, 10);
 
         //Dimension dimension = new Dimension(20,20);
         int labelWidth = 150;
         int labelHeight = 20;
 
-        Label aLabel = new Label("Type a value for A = ",Label.CENTER);
-        aLabel.setLocation(40,40);
-        aLabel.setSize(labelWidth,labelHeight);
+        Label aLabel = new Label("Type a value for A = ", Label.CENTER);
+        aLabel.setLocation(40, 40);
+        aLabel.setSize(labelWidth, labelHeight);
 
-        Label bLabel = new Label("Type a value for B = ",Label.CENTER);
-        bLabel.setLocation(40,80);
-        bLabel.setSize(labelWidth,labelHeight);
+        Label bLabel = new Label("Type a value for B = ", Label.CENTER);
+        bLabel.setLocation(40, 80);
+        bLabel.setSize(labelWidth, labelHeight);
 
-        Label cLabel = new Label("Type a value for C = ",Label.CENTER);
-        cLabel.setLocation(40,120);
-        cLabel.setSize(labelWidth,labelHeight);
+        Label cLabel = new Label("Type a value for C = ", Label.CENTER);
+        cLabel.setLocation(40, 120);
+        cLabel.setSize(labelWidth, labelHeight);
 
         int fieldWidth = 30;
         int fieldHeight = 30;
@@ -44,22 +43,22 @@ public class LearningJournal1 {
         TextField aField = new TextField(Label.CENTER);
 //        Scanner scanner = new Scanner(System.in);
 //        double number = scanner.nextDouble();
-        aField.setSize(fieldWidth,fieldHeight);
-        aField.setLocation(fieldHorizontal,40);
+        aField.setSize(fieldWidth, fieldHeight);
+        aField.setLocation(fieldHorizontal, 40);
 
 
         TextField bField = new TextField(Label.CENTER);
-        bField.setSize(fieldWidth,fieldHeight);
-        bField.setLocation(fieldHorizontal,80);
+        bField.setSize(fieldWidth, fieldHeight);
+        bField.setLocation(fieldHorizontal, 80);
 
         TextField cField = new TextField(Label.CENTER);
-        cField.setSize(fieldWidth,fieldHeight);
-        cField.setLocation(fieldHorizontal,120);
+        cField.setSize(fieldWidth, fieldHeight);
+        cField.setLocation(fieldHorizontal, 120);
 
         Button calculateButton = new Button();
         calculateButton.setLabel("Calculate");
-        calculateButton.setSize(100,40);
-        calculateButton.setLocation(250,160);
+        calculateButton.setSize(100, 40);
+        calculateButton.setLocation(250, 160);
 
         janelaTeste.add(questionLabel);
         janelaTeste.add(aLabel);
@@ -70,7 +69,7 @@ public class LearningJournal1 {
         janelaTeste.add(cField);
         janelaTeste.add(calculateButton);
 
-          //variables of the equation
+        //variables of the equation
         char userChoice; //  variable to store a char with the user's answer
 
 
@@ -80,8 +79,6 @@ public class LearningJournal1 {
 
             System.out.println("Type the numbers to calculate the the " +
                     "largest root of quadratic equation.");
-
-
 
 
             System.out.println("Type a value for A = ");
