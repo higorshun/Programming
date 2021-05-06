@@ -1,3 +1,5 @@
+package peerswork;
+
 import java.util.Arrays;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Arrays;
  * cause incorrect output or infinite loops.  Use the Eclipse debugger to 
  * find the bugs and fix them
  */
-public class BuggySearchAndSort {
+public class BuggySearchAndSortPeerThree {
 	
 	public static void main(String[] args) {
 		
@@ -24,7 +26,7 @@ public class BuggySearchAndSort {
 		System.out.print("The array is:");
 		printArray(A);
 		
-		if (contains(A,5))
+		if (contains(A,12))
 			System.out.println("This array DOES contain 5.");
 		else
 			System.out.println("This array DOES NOT contain 5.");
@@ -54,7 +56,7 @@ public class BuggySearchAndSort {
 	 * @return true if val is one of the items in the array, false if not
 	 */
 	public static boolean contains(int[] array, int val) {
-		for (int i = 0; i < array.length; i++) {
+		for (int i = 0; i < array.length;) {
 			if (array[i] == val)
 				return true;
 			else
@@ -70,8 +72,9 @@ public class BuggySearchAndSort {
 	 * to the length of the array.
 	 */
 	public static void bubbleSort(int[] array) {
+		
 		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array.length-1; i++) {
+			for (int j = 0; j < array.length-1; j++) {
 				if (array[j] > array[j+1]) { // swap elements j and j+1
 					int temp = array[j];
 					array[j] = array[j+1];
@@ -79,6 +82,7 @@ public class BuggySearchAndSort {
 				}
 			}
 		}
+		
 	}
 	
 	/**
@@ -87,11 +91,13 @@ public class BuggySearchAndSort {
 	 * the list, then the second-largest in the next to last place, and so on.
 	 */
 	public static void selectionSort(int[] array) {
-		for (int top = array.length - 1; top > 0; top--) {
+		for (int j= array.length; j > 0; j--) {
+			int top= j-1;
 			int positionOfMax = 0;
-			for (int i = 1; i <= top; i++) {
-				if (array[1] > array[positionOfMax])
+			for (int i = 0; i <j; i++) {
+				if (array[i] >= array[positionOfMax]) {
 					positionOfMax = i;
+				}
 			}
 			int temp = array[top];  // swap top item with biggest item
 			array[top] = array[positionOfMax];
@@ -108,12 +114,14 @@ public class BuggySearchAndSort {
 		for (int top = 1; top < array.length; top++) {
 			int temp = array[top];  // copy item that into temp variable
 			int pos = top - 1;
-			while (pos > 0 && array[pos] > temp) {
+			while(pos >= 0 && array[pos] > temp) {
 				   // move items that are bigger than temp up one position
-				array[pos+1] = array[pos];
+				array[pos+1]= array[pos];
 				pos--;
+				
 			}
-			array[pos] = temp;  // place temp into last vacated position
+			
+			array[pos+1] = temp;  // place temp into last vacated position
 		}
 	}
 	
